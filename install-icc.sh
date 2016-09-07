@@ -27,10 +27,10 @@ COMPONENTS_IPP_CRYPTO="intel-crypto-ipp-st-devel__x86_64;intel-crypto-ipp-ps-st-
 COMPONENTS_DAAL="intel-daal__x86_64;intel-daal-common__noarch"
 
 # Compilers
-COMPONENTS_OPENMP="intel-openmp-l-all__x86_64;intel-openmp-l-ps-mic__x86_64;intel-openmp-l-ps__x86_64;intel-openmp-l-ps-ss__x86_64;intel-openmp-l-all-devel__x86_64;intel-openmp-l-ps-mic-devel__x86_64;intel-openmp-l-ps-devel__x86_64;intel-openmp-l-ps-ss-devel__x86_64"
-COMPONENTS_COMPILER_COMMON="intel-comp-l-all-vars__noarch;intel-comp-l-all-common;intel-comp-l-ps-common;intel-comp-l-all-devel;intel-comp-l-ps-ss-devel;intel-comp-l-ps-ss-wrapper;intel-comp-l-all-devel;intel-comp-l-ps-devel__x86_64;intel-comp-l-ps-ss-devel__x86_64;intel-psf-intel__x86_64;intel-icsxe-pset;intel-ipsf__noarch;intel-ccompxe__noarch;${COMPONENTS_OPENMP}"
+COMPONENTS_OPENMP="intel-openmp-l-all__x86_64;intel-openmp-l-ps-ss-bec__x86_64;intel-openmp-l-ps-ss__x86_64;intel-openmp-l-ps-bec__x86_64;intel-openmp-l-ps-libs__x86_64;intel-openmp-l-ps__x86_64"
+COMPONENTS_COMPILER_COMMON="intel-comp-l-all-vars__noarch;intel-comp-l-all-common__noarch;intel-comp-l-ps-ss-bec-wrapper__x86_64;intel-comp-l-all-wrapper__x86_64;intel-comp-l-all__x86_64;intel-comp-l-ps-ss-bec__x86_64;intel-comp-l-ps__x86_64;intel-comp-l-ps-ss__x86_64;intel-comp-l-ss-wrapper__x86_64;intel-comp-l-bec-wrapper__x86_64;intel-comp-l-vxw-wrapper__x86_64;intel-psf-intel__x86_64;intel-icsxe-pset;intel-ipsf__noarch;intel-ccompxe__noarch;${COMPONENTS_OPENMP}"
 COMPONENTS_IFORT="intel-ifort-l-ps__x86_64;intel-ifort-l-ps-vars__noarch;intel-ifort-l-ps-common__noarch;intel-ifort-l-ps-devel__x86_64;${COMPONENTS_COMPILER_COMMON}"
-COMPONENTS_ICC="intel-icc-l-all__x86_64;intel-icc-l-ps-ss__x86_64;intel-icc-l-all-vars__noarch;intel-icc-l-all-common__noarch;intel-icc-l-ps-common__noarch;intel-icc-l-all-devel__x86_64;intel-icc-l-ps-devel__x86_64;intel-icc-l-ps-ss-devel__x86_64;${COMPONENTS_COMPILER_COMMON}"
+COMPONENTS_ICC="intel-icc-l-all-common__noarch;intel-icc-l-ps-ss-bec-common__noarch;intel-icc-l-ps-common__noarch;intel-icc-l-all-wrapper__x86_64;intel-icc-l-ps-ss-bec-wrapper__x86_64;intel-icc-l-bec-wrapper__x86_64;intel-icc-l-all__x86_64;intel-icc-l-ps-ss__x86_64;intel-icc-l-ps__x86_64;intel-icc-l-ps-ss-bec__x86_64;${COMPONENTS_COMPILER_COMMON}"
 
 DESTINATION="${HOME}/intel"
 TEMPORARY_FILES="/tmp"
