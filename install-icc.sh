@@ -118,9 +118,11 @@ if [ -z "${COMPONENTS}" ]; then
     COMPONENTS="${COMPONENTS_ICC}"
 fi
 
-INSTALLER_SCRIPT="parallel_studio_xe_2016_update3_online.sh"
-INSTALLER="${TEMPORARY_FILES}/${INSTALLER_SCRIPT}"
-INSTALLER_URL="http://registrationcenter-download.intel.com/akdlm/irc_nas/9061/${INSTALLER_SCRIPT}"
+VERSION="parallel_studio_xe_2017_professional_edition_online"
+INDEX=9653
+ARCHIVE="${VERSION}.tgz"
+INSTALLER="${TEMPORARY_FILES}/${VERSION}/install.sh"
+INSTALLER_URL="http://registrationcenter-download.intel.com/akdlm/irc_nas/${INDEX}/${ARCHIVE}"
 SILENT_CFG="${TEMPORARY_FILES}/silent.cfg"
 SUCCESS_INDICATOR="${TEMPORARY_FILES}/icc-travis-success"
 
@@ -135,7 +137,8 @@ if [ ! -e "${DESTINATION}" ]; then
 fi
 
 if [ ! -e "${INSTALLER}" ]; then
-	wget -O "${INSTALLER}" "${INSTALLER_URL}" || exit 1
+	wget -O "${TEMPORARY_FILES}/${ARCHIVE}" "${INSTALLER_URL}" || exit 1
+  (cd "${TEMPORARY_FILES}" && tar -xf "${ARCHIVE}")
 fi
 chmod u+x "${INSTALLER}"
 
