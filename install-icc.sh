@@ -28,9 +28,9 @@ COMPONENTS_DAAL="intel-daal__x86_64;intel-daal-common__noarch"
 
 # Compilers
 COMPONENTS_OPENMP="intel-openmp-l-all__x86_64;intel-openmp-l-ps-ss-bec__x86_64;intel-openmp-l-ps-ss__x86_64;intel-openmp-l-ps-bec__x86_64;intel-openmp-l-ps-libs__x86_64;intel-openmp-l-ps__x86_64"
-COMPONENTS_COMPILER_COMMON="intel-comp-l-all-vars__noarch;intel-comp-l-all-common__noarch;intel-comp-l-ps-ss-bec-wrapper__x86_64;intel-comp-l-all-wrapper__x86_64;intel-comp-l-all__x86_64;intel-comp-l-ps-ss-bec__x86_64;intel-comp-l-ps__x86_64;intel-comp-l-ps-ss__x86_64;intel-comp-l-ss-wrapper__x86_64;intel-comp-l-bec-wrapper__x86_64;intel-comp-l-vxw-wrapper__x86_64;intel-psf-intel__x86_64;intel-icsxe-pset;intel-ipsf__noarch;intel-ccompxe__noarch;${COMPONENTS_OPENMP}"
+COMPONENTS_COMPILER_COMMON="intel-comp-l-all-vars__noarch;intel-comp-l-all-common__noarch;intel-comp-l-ps-ss-bec-wrapper__x86_64;intel-comp-l-all-wrapper__x86_64;intel-comp-l-all__x86_64;intel-comp-l-ps-ss-bec__x86_64;intel-comp-l-ps__x86_64;intel-comp-l-ps-ss__x86_64;intel-psf-intel__x86_64;intel-icsxe-pset;intel-ipsf__noarch;intel-ccompxe__noarch;${COMPONENTS_OPENMP}"
 COMPONENTS_IFORT="intel-ifort-l-ps__x86_64;intel-ifort-l-ps-vars__noarch;intel-ifort-l-ps-common__noarch;intel-ifort-l-ps-devel__x86_64;${COMPONENTS_COMPILER_COMMON}"
-COMPONENTS_ICC="intel-icc-l-all-common__noarch;intel-icc-l-ps-ss-bec-common__noarch;intel-icc-l-ps-common__noarch;intel-icc-l-all-wrapper__x86_64;intel-icc-l-ps-ss-bec-wrapper__x86_64;intel-icc-l-bec-wrapper__x86_64;intel-icc-l-all__x86_64;intel-icc-l-ps-ss__x86_64;intel-icc-l-ps__x86_64;intel-icc-l-ps-ss-bec__x86_64;${COMPONENTS_COMPILER_COMMON}"
+COMPONENTS_ICC="intel-icc-l-all-common__noarch;intel-icc-l-ps-ss-bec-common__noarch;intel-icc-l-ps-common__noarch;intel-icc-l-all-wrapper__x86_64;intel-icc-l-ps-ss-bec-wrapper__x86_64;intel-icc-l-all__x86_64;intel-icc-l-ps-ss__x86_64;intel-icc-l-ps__x86_64;intel-icc-l-ps-ss-bec__x86_64;${COMPONENTS_COMPILER_COMMON}"
 
 DESTINATION="${HOME}/intel"
 TEMPORARY_FILES="/tmp"
@@ -118,8 +118,8 @@ if [ -z "${COMPONENTS}" ]; then
     COMPONENTS="${COMPONENTS_ICC}"
 fi
 
-VERSION="parallel_studio_xe_2017_professional_edition_online"
-INDEX=9653
+VERSION="parallel_studio_xe_2017_update1_professional_edition_online"
+INDEX=10975
 ARCHIVE="${VERSION}.tgz"
 INSTALLER="${TEMPORARY_FILES}/${VERSION}/install.sh"
 INSTALLER_URL="http://registrationcenter-download.intel.com/akdlm/irc_nas/${INDEX}/${ARCHIVE}"
